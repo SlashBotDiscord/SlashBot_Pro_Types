@@ -6,8 +6,8 @@ const ButtonRoleTypes = Object.freeze({
 } as const)
 
 enum ButtonRoleRequiredRolesMode{
-    AT_LEAST_ONE,
-    ALL
+    AT_LEAST_ONE = 0,
+    ALL = 1
 }
 
 const ButtonRoleLimits = Object.freeze({
