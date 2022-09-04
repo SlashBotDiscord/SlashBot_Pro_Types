@@ -1,20 +1,20 @@
-export const ButtonRoleTypes = Object.freeze({
+const ButtonRoleTypes = Object.freeze({
     TOGGLE: 0,
     SWITCH: 1,
     ADD: 2,
     REMOVE: 4
 } as const)
 
-export enum ButtonRoleRequiredRolesMode{
+enum ButtonRoleRequiredRolesMode{
     AT_LEAST_ONE,
     ALL
 }
 
-export const ButtonRoleLimits = Object.freeze({
+const ButtonRoleLimits = Object.freeze({
     ROLES: 100
 }as const)
 
-export interface ButtonRoleData {
+interface ButtonRoleData {
     id?: string,
     roles_toggle: string[],
     roles_add: string[],
@@ -29,16 +29,25 @@ export interface ButtonRoleData {
     paused?: boolean
 }
 
-export interface PremiumUser {
+interface PremiumUser {
 	index: number,
 	expires_at: string,
 	user_id: string,
 	tier: number
 }
 
-export interface PremiumGuild {
+interface PremiumGuild {
 	index: number,
 	expires_at: string,
 	user_id?: string,
 	guild_id: string
+}
+
+export {
+    ButtonRoleTypes,
+    ButtonRoleRequiredRolesMode,
+    ButtonRoleLimits,
+    ButtonRoleData,
+    PremiumUser,
+    PremiumGuild
 }
