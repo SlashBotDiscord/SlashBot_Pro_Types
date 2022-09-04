@@ -15,3 +15,9 @@ const ButtonRoleRequiredRolesMode = Object.freeze({
 const ButtonRoleLimits = Object.freeze({
     ROLES: 100
 })
+
+module.exports = {
+    ButtonRoleTypes,
+    ButtonRoleRequiredRolesMode,
+    ButtonRoleLimits
+}
