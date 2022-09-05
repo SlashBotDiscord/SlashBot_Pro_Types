@@ -14,6 +14,15 @@ const ButtonRoleLimits = Object.freeze({
     ROLES: 100
 }as const)
 
+const ButtonRolePremiumAmount = Object.freeze({
+    0: 10,
+    1: 100,
+    2: 100,
+    3: 100,
+    4: 100,
+    5: 1000
+} as const)
+
 interface ButtonRoleData {
     id?: string,
     roles_toggle: string[],
@@ -49,5 +58,6 @@ export {
     ButtonRoleLimits,
     ButtonRoleData,
     PremiumUser,
-    PremiumGuild
+    PremiumGuild,
+    ButtonRolePremiumAmount
 }
