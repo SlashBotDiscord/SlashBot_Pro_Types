@@ -25,6 +25,14 @@ const ButtonRolePremiumAmount = Object.freeze({
     5: 1000
 })
 
+const PatreonPremiumTiers = Object.freeze({
+    0: "Support",
+    1: "Premium Support",
+    2: "Superior Support",
+    3: "Crazy Support",
+    4: "Godlike Support"
+})
+
 module.exports = {
     ButtonRoleTypes,
     ButtonRoleRequiredRolesMode,

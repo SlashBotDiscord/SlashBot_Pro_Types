@@ -1,29 +1,29 @@
-const ButtonRoleTypes = Object.freeze({
+declare interface ButtonRoleTypes {
     TOGGLE: 0,
     SWITCH: 1,
     ADD: 2,
     REMOVE: 4
-} as const)
+}
 
-enum ButtonRoleRequiredRolesMode{
+declare enum ButtonRoleRequiredRolesMode{
     AT_LEAST_ONE = 0,
     ALL = 1
 }
 
-const ButtonRoleLimits = Object.freeze({
+declare interface ButtonRoleLimits {
     ROLES: 100
-}as const)
+}
 
-const ButtonRolePremiumAmount = Object.freeze({
+declare interface ButtonRolePremiumAmount {
     0: 10,
     1: 100,
     2: 100,
     3: 100,
     4: 100,
     5: 1000
-} as const)
+}
 
-interface ButtonRoleData {
+declare interface ButtonRoleData {
     id?: string,
     roles_toggle: string[],
     roles_add: string[],
@@ -38,18 +38,26 @@ interface ButtonRoleData {
     paused?: boolean
 }
 
-interface PremiumUser {
+declare interface PremiumUser {
 	index: number,
 	expires_at: string,
 	user_id: string,
 	tier: number
 }
 
-interface PremiumGuild {
+declare interface PremiumGuild {
 	index: number,
 	expires_at: string,
 	user_id?: string,
 	guild_id: string
+}
+
+declare interface PatreonPremiumTiers {
+    0: "Support",
+    1: "Premium Support",
+    2: "Superior Support",
+    3: "Crazy Support",
+    4: "Godlike Support"
 }
 
 export {
@@ -59,5 +67,6 @@ export {
     ButtonRoleData,
     PremiumUser,
     PremiumGuild,
-    ButtonRolePremiumAmount
+    ButtonRolePremiumAmount,
+    PatreonPremiumTiers
 }
