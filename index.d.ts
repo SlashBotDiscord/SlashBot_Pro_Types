@@ -52,12 +52,12 @@ declare interface PremiumGuild {
 	guild_id: string
 }
 
-declare interface PatreonPremiumTiers {
-    0: "Support",
-    1: "Premium Support",
-    2: "Superior Support",
-    3: "Crazy Support",
-    4: "Godlike Support"
+declare enum PatreonPremiumTiers {
+    "Support" = 0,
+    "Premium Support" = 1,
+    "Superior Support" = 2,
+    "Crazy Support" = 3,
+    "Godlike Support" = 4
 }
 
 export {
