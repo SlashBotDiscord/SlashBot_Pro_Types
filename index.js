@@ -26,16 +26,18 @@ const ButtonRolePremiumAmount = Object.freeze({
 })
 
 const PatreonPremiumTiers = Object.freeze({
-    0: "Support",
-    1: "Premium Support",
-    2: "Superior Support",
-    3: "Crazy Support",
-    4: "Godlike Support",
-    "Support": 0,
-    "Premium Support": 1,
-    "Superior Support": 2,
-    "Crazy Support": 3,
-    "Godlike Support": 4
+    0: "None",
+    1: "Support",
+    2: "Premium Support",
+    3: "Superior Support",
+    4: "Crazy Support",
+    5: "Godlike Support",
+    "None": 0,
+    "Support": 1,
+    "Premium Support": 2,
+    "Superior Support": 3,
+    "Crazy Support": 4,
+    "Godlike Support": 5
 })
 
 module.exports = {

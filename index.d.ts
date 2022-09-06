@@ -53,11 +53,12 @@ declare interface PremiumGuild {
 }
 
 declare enum PatreonPremiumTiers {
-    "Support" = 0,
-    "Premium Support" = 1,
-    "Superior Support" = 2,
-    "Crazy Support" = 3,
-    "Godlike Support" = 4
+    "None" = 0,
+    "Support" = 1,
+    "Premium Support" = 2,
+    "Superior Support" = 3,
+    "Crazy Support" = 4,
+    "Godlike Support" = 5
 }
 
 export {
