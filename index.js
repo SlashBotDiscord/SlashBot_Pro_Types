@@ -25,10 +25,10 @@ exports.ButtonRoleLimits = Object.freeze({
     ROLES: 100
 });
 exports.ButtonRolePremiumAmount = Object.freeze({
-    0: 10,
-    1: 100,
-    2: 100,
-    3: 100,
-    4: 100,
-    5: 1000
+    "0": 10,
+    "1": 100,
+    "2": 100,
+    "3": 100,
+    "4": 100,
+    "5": 1000
 });
