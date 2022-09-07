@@ -20,12 +20,12 @@ export declare const ButtonRoleLimits: Readonly<{
     ROLES: 100;
 }>;
 export declare const ButtonRolePremiumAmount: Readonly<{
-    0: 10;
-    1: 100;
-    2: 100;
-    3: 100;
-    4: 100;
-    5: 1000;
+    "0": 10;
+    "1": 100;
+    "2": 100;
+    "3": 100;
+    "4": 100;
+    "5": 1000;
 }>;
 export interface ButtonRoleData {
     id?: string;
