@@ -45,6 +45,7 @@ export interface ButtonRoleData {
 export interface Form {
     id: string;
     title: string;
+    guild_id: string;
     logchannel?: string;
     question_1: string;
     question_2?: string;
