@@ -61,6 +61,7 @@ export interface Form {
     question_4?: string;
     question_5?: string;
     editable: boolean;
+    paused?: boolean;
 }
 export interface FormResponse {
     id: string;
