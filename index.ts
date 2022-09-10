@@ -32,6 +32,15 @@ export const ButtonRolePremiumAmount = Object.freeze({
     "5": 1000
 });
 
+export const FormPremiumAmount = Object.freeze({
+    "0": 1,
+    "1": 10,
+    "2": 25,
+    "3": 35,
+    "4": 50,
+    "5": 100
+});
+
 export interface ButtonRoleData {
     id?: string,
     roles_toggle: string[],

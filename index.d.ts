@@ -27,6 +27,14 @@ export declare const ButtonRolePremiumAmount: Readonly<{
     "4": 100;
     "5": 1000;
 }>;
+export declare const FormPremiumAmount: Readonly<{
+    "0": 1;
+    "1": 10;
+    "2": 25;
+    "3": 35;
+    "4": 50;
+    "5": 100;
+}>;
 export interface ButtonRoleData {
     id?: string;
     roles_toggle: string[];
