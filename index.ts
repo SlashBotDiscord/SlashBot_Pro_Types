@@ -39,12 +39,36 @@ export interface ButtonRoleData {
     roles_remove: string[],
     roles_required: string[],
     guild_id: string,
+    logchannel: string;
     require_mode: ButtonRoleRequiredRolesMode,
     notification: boolean,
     users_limit: number,
     users_left: number,
     users_clicked: string[],
     paused?: boolean
+}
+
+export interface Form {
+    id: string,
+    title: string,
+    question_1: string,
+    question_2?: string,
+    question_3?: string,
+    question_4?: string,
+    question_5?: string,
+    editable: boolean
+}
+
+export interface FormResponse {
+    id: string,
+    user_id: string,
+    answer_1: string,
+    answer_2?: string,
+    answer_3?: string,
+    answer_4?: string,
+    answer_5?: string,
+    edited: boolean,
+    submitted_at: string
 }
 
 export interface PremiumUser {
