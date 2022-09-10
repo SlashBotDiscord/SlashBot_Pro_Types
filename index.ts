@@ -51,6 +51,7 @@ export interface ButtonRoleData {
 export interface Form {
     id: string,
     title: string,
+    logchannel?: string,
     question_1: string,
     question_2?: string,
     question_3?: string,
@@ -68,7 +69,7 @@ export interface FormResponse {
     answer_4?: string,
     answer_5?: string,
     edited: boolean,
-    submitted_at: string
+    submitted_at: string,
 }
 
 export interface PremiumUser {
