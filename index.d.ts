@@ -64,6 +64,7 @@ export interface Form {
     paused?: boolean;
 }
 export interface FormResponse {
+    id: string;
     form_id: string;
     user_id: string;
     answer_1: string;
