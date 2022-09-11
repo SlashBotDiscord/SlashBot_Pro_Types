@@ -1,6 +1,6 @@
 {
   "name": "slashbot_pro_types",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "index.js",
   "private": true,
   "repository": {
@@ -11,5 +11,8 @@
   "homepage": "https://github.com/SlashBotDiscord/SlashBot_Pro_Types#readme",
   "devDependencies": {
     "typescript": "^4.8.2"
+  },
+  "scripts": {
+    "push_update": "npx tsc -p . && git add . && git commit -m \"changed the types\" && git push origin main"
   }
 }
