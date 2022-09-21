@@ -41,6 +41,15 @@ export const FormPremiumAmount = Object.freeze({
     "5": 100
 });
 
+export const PremiumGuildsPerTier = Object.freeze({
+    0: 0,
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 6,
+})
+
 export interface ButtonRoleData {
     id?: string,
     roles_toggle: string[],
