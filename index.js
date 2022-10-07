@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PremiumGuildsPerTier = exports.FormPremiumAmount = exports.ButtonRolePremiumAmount = exports.ButtonRoleLimits = exports.ButtonRoleTypes = exports.PatreonPremiumTiers = exports.ButtonRoleRequiredRolesMode = void 0;
+exports.PremiumGuildsPerTier = exports.FormPremiumAmount = exports.SelectMenuRolePremiumAmount = exports.ButtonRolePremiumAmount = exports.SystemLimits = exports.ButtonRoleTypes = exports.PatreonPremiumTiers = exports.ButtonRoleRequiredRolesMode = void 0;
 var ButtonRoleRequiredRolesMode;
 (function (ButtonRoleRequiredRolesMode) {
     ButtonRoleRequiredRolesMode[ButtonRoleRequiredRolesMode["AT_LEAST_ONE"] = 0] = "AT_LEAST_ONE";
@@ -21,8 +21,11 @@ exports.ButtonRoleTypes = Object.freeze({
     ADD: 2,
     REMOVE: 4
 });
-exports.ButtonRoleLimits = Object.freeze({
-    ROLES: 100
+exports.SystemLimits = Object.freeze({
+    BUTTONROLE_ROLES: 100,
+    BUTTONROLE_REQUIRED: 100,
+    SELECTMENUROLE_OPTION_ROLES: 100,
+    SELECTMENUROLE_OPTION_REQUIRED: 100
 });
 exports.ButtonRolePremiumAmount = Object.freeze({
     "0": 10,
@@ -31,6 +34,14 @@ exports.ButtonRolePremiumAmount = Object.freeze({
     "3": 100,
     "4": 100,
     "5": 1000
+});
+exports.SelectMenuRolePremiumAmount = Object.freeze({
+    "0": 5,
+    "1": 50,
+    "2": 50,
+    "3": 50,
+    "4": 50,
+    "5": 500
 });
 exports.FormPremiumAmount = Object.freeze({
     "0": 1,

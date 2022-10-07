@@ -16,8 +16,11 @@ export declare const ButtonRoleTypes: Readonly<{
     ADD: 2;
     REMOVE: 4;
 }>;
-export declare const ButtonRoleLimits: Readonly<{
-    ROLES: 100;
+export declare const SystemLimits: Readonly<{
+    BUTTONROLE_ROLES: 100;
+    BUTTONROLE_REQUIRED: 100;
+    SELECTMENUROLE_OPTION_ROLES: 100;
+    SELECTMENUROLE_OPTION_REQUIRED: 100;
 }>;
 export declare const ButtonRolePremiumAmount: Readonly<{
     "0": 10;
@@ -26,6 +29,14 @@ export declare const ButtonRolePremiumAmount: Readonly<{
     "3": 100;
     "4": 100;
     "5": 1000;
+}>;
+export declare const SelectMenuRolePremiumAmount: Readonly<{
+    "0": 5;
+    "1": 50;
+    "2": 50;
+    "3": 50;
+    "4": 50;
+    "5": 500;
 }>;
 export declare const FormPremiumAmount: Readonly<{
     "0": 1;
